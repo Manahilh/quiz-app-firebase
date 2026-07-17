@@ -1,0 +1,143 @@
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1d4ed8);
+  color: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.login-options input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #475569;
+  background: #0f172a;
+  color: #f8fafc;
+  font-size: 1rem;
+}
+
+.login-options input::placeholder {
+  color: #94a3b8;
+  font-size: 1rem;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.app-card {
+  width: min(100%, 620px);
+  background: rgba(15, 23, 42, 0.9);
+  padding: 32px;
+  border-radius: 24px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12px);
+}
+
+h1,
+h2 {
+  margin-top: 0;
+}
+
+p {
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+.login-options,
+.phone-box,
+.quiz-actions,
+.quiz-topbar {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.login-options,
+.phone-box {
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+.primary-btn,
+.secondary-btn {
+  border: none;
+  border-radius: 999px;
+  padding: 12px 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+  transform: translateY(-2px);
+}
+
+.primary-btn {
+  background: #38bdf8;
+  color: #082f49;
+}
+
+.secondary-btn {
+  background: #334155;
+  color: #f8fafc;
+}
+
+.phone-box input {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #475569;
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+.quiz-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.quiz-topbar {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge,
+.timer,
+.score {
+  background: rgba(56, 189, 248, 0.15);
+  color: #bae6fd;
+  padding: 8px 12px;
+  border-radius: 999px;
+}
+
+.options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #1e293b;
+  padding: 12px 14px;
+  border-radius: 12px;
+}
+
+.options {
+  accent-color: #38bdf8;
+}
